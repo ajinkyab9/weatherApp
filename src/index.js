@@ -11,7 +11,7 @@ setDefaultBg();
 updateDateTime();
 
 export const searchInput = document.getElementById("searchCity");
-const searchButton = document.getElementById("submitGifKeyword");
+const searchButton = document.getElementById("submitCitySearch");
 
 searchButton.addEventListener("click", async (e) => {
   e.preventDefault();

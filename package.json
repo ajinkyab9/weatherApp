@@ -12,10 +12,10 @@
   },
   "license": "ISC",
   "author": "ajinkyab9",
-  "type": "commonjs",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "npm run test"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
     "node": "^24.16.0"

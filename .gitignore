@@ -12,3 +12,6 @@ thumbs.db
 #ide settings
 .vscode/
 .idea/
+
+#env
+env/env.js
