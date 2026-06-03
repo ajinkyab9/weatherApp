@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather Me</title>
+</head>
+
+<body>
+  <video id="bgVideo" autoplay loop muted playsinline></video>
+  <div class="mainHeading">Weather Me</div>
+
+  <main class="mainBody">
+
+    <div class="cmmInfoCont leftInfoCont" id="leftInfoCont">
+      <div id="welcomeMessage">
+        Enter a city to show the weather
+      </div>
+
+      <div id="loadingState">
+        <div class="spinner"></div>
+        <span id="spinnerText">Fetching weather data...</span>
+      </div>
+      <div class="detCont" id="weatherDetails">
+        <div class="miscDet">
+          <div class="tempDescCont">
+            <span class="tempDesc" id="dispCondition"></span>
+          </div>
+          <div class="mainTempCont" id=""><span id="tempDisp"></span></span><sup>&deg</sup><sub>C</sub></div>
+          <div class="feelsLikeCont" id="">
+            Feels Like:&nbsp;<span id="feelsLikeDisp"></span><sup>&deg</sup><sub>C</sub>
+          </div>
+        </div>
+        <div class="wDetCont" id="wDetCont">
+          <span id="">Humidity: <span id="dispHumidity"></span></span>
+          <span id="">Precipitation: <span id="dispPrecipitation"></span></span>
+          <span id="">Dew: <span id="dispDew"></span></span>
+          <span id="">Wind: <span id="dispWind"></span></span>
+          <span id="">UV Index: <span id="dispUvIndex"></span></span>
+        </div>
+      </div>
+    </div>
+    <div class="cmmInfoCont rightInfoCont" id="rightInfoCont">
+      <div class="searchContainer" id="searchContainer">
+        <form action="" id="searchForm">
+          <input type="text" id="searchCity" name="searchCity" placeholder="Enter City" />
+          <button type="button" id="submitGifKeyword">Search</button>
+        </form>
+      </div>
+      <div class="dateTime">
+        <div class="greet" id="dispGreet"></div>
+        <div class="dateCont" id="dispTime"></div>
+        <div class="srsCont" id="dispSRS">
+          Sunrise:&nbsp;<span id="dispSr"></span>&nbsp;|&nbsp;Sunset:<span id="dispSs"></span>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>

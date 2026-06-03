@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  color: rgb(255, 252, 246);
+}
+
+
+.searchContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* 1. Target the input field */
+#searchCity {
+  padding: 12px 20px;
+  font-size: 1rem;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px 0 0 8px;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.mainHeading {
+  padding: 12px 24px;
+font-family: "Ubuntu", sans-serif;
+  font-size: 3rem;
+  font-weight: 400;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-left: none;
+  border-radius: 0.5rem;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+#searchCity::placeholder {
+  color: rgba(39, 37, 37, 0.7);
+}
+
+#searchCity:focus {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+#submitGifKeyword {
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-left: none;
+  border-radius: 0 8px 8px 0;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.mainBody {
+  display: flex;
+  margin-top: 1.5rem;
+  height: 85vh;
+  background-color: antiquewhite;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.1),
+    inset 0 0 2px 1px rgba(255, 255, 255, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.mainBody::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.8),
+    transparent
+  );
+}
+
+.mainBody::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.8),
+    transparent,
+    rgba(255, 255, 255, 0.3)
+  );
+}
+
+.cmmInfoCont {
+  height: 100%;
+}
+.leftInfoCont {
+  width: 70%;
+  background-color: rgba(47, 47, 47, 0.2);
+}
+
+.rightInfoCont {
+  width: 30%;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  gap: 10rem;
+  padding-top: 10rem;
+}
+
+.leftInfoCont {
+  display: flex;
+  padding: 10rem;
+  align-items: end;
+}
+
+.detCont {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.feelsLikeCont {
+  font-size: 1.75rem;
+}
+
+.mainTempCont {
+  font-size: 10rem;
+}
+
+.wDetCont {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.tempDesc {
+  display: block;
+  width: 75%;
+  font-size: 1.5rem;
+}
+
+.miscDet {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.dateTime {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.greet {
+  font-size: 3rem;
+}
+
+.dateCont,
+.srsCont {
+  font-size: 1.25rem;  
+}
+
+#bgVideo {
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  width: 100vw; 
+  height: 100vh; 
+  object-fit: cover; 
+  z-index: -1;
+}
+
+#weatherDetails {
+  display: none;
+}
+
+#dispSRS {
+  display: none;
+}
+
+#welcomeMessage {
+font-size: 3.5rem; 
+color: #ffffff;
+}
+
+#loadingState{
+  display: none; 
+  flex-direction: column; 
+  align-items: center; 
+  gap: 1rem; 
+  color: white;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  /* Creates the semi-transparent track */
+  border: 5px solid rgba(255, 255, 255, 0.2); 
+  /* Creates the solid white spinning edge */
+  border-top: 5px solid #ffffff; 
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+#spinnerText {
+  font-size: 3.5rem;
+}
